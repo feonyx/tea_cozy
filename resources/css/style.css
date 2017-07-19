@@ -11,8 +11,11 @@ body {
 header {
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   height: 69px;
+  background-color: black;
   border-bottom: 1px solid seashell;
   flex-direction: row;
   justify-content: flex-start;
@@ -45,4 +48,41 @@ header nav a {
 
 .header-nav span {
   margin-right: 20px;
+}
+
+/*Headers*/
+h2 {
+  margin: 11px;
+}
+
+h4 {
+  margin: 11px;
+}
+/*Mission Content*/
+
+#mission {
+  height: 700px;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.mission-background {
+  background-image: url("../images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 1200px;
 }
