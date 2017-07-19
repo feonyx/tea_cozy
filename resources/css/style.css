@@ -6,6 +6,10 @@ body {
   opacity: 0.9;
 }
 
+/*TEMP */
+div {
+  border: 1px solid seashell;
+}
 /* Header */
 
 header {
@@ -52,11 +56,26 @@ header nav a {
 
 /*Headers*/
 h2 {
-  margin: 11px;
+  margin: 11px auto 22px auto;
 }
 
 h4 {
-  margin: 11px;
+  margin: auto auto 11px auto;
+}
+
+/*Theme*/
+
+section {
+  padding-top: 70px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 /*Mission Content*/
 
@@ -66,7 +85,6 @@ h4 {
   top: 0;
   align-items: center;
   justify-content: center;
-  padding-top: 70px;
 }
 
 .mission-background {
@@ -85,4 +103,45 @@ h4 {
   align-items: center;
   background-color: black;
   width: 1200px;
+}
+
+/*Tea of the Month Content*/
+
+#tea-of-the-month {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tea-month {
+  max-width: 1000px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-body {
+  width: 1000px;
+}
+
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+}
+
+.monthly {
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img {
+  max-height: 200px;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
