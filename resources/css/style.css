@@ -41,10 +41,8 @@ header nav a {
   display: inline-block;
   flex-direction: row;
   justify-content: flex-end;
-  /*padding-right: 20px;*/
 }
 
 .header-nav span {
   margin-right: 20px;
-
 }
