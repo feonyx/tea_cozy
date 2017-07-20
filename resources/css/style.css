@@ -6,7 +6,7 @@ body {
   opacity: 0.9;
 }
 
-/*TEMP */
+/*TEMP /
 div {
   border: 1px solid seashell;
 }
@@ -56,11 +56,11 @@ header nav a {
 
 /*Headers*/
 h2 {
-  margin: 11px auto 22px auto;
+  margin: 10px auto;
 }
 
 h4 {
-  margin: auto auto 11px auto;
+  margin: 10px auto;
 }
 
 /*Theme*/
@@ -107,9 +107,9 @@ section {
 
 /*Tea of the Month Content*/
 
-#tea-of-the-month {
+#featured {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -127,21 +127,39 @@ section {
 
 .features {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  max-width: 1000px;
+  flex-direction: column;
+
+  width: 1000px;
 }
 
-.monthly {
-  flex-basis: 300px;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
+}
+
+.row1 {
+  justify-content: space-between;
+}
+
+.row2 {
   justify-content: center;
 }
 
+.row2 .monthly {
+  margin: auto 25px;
+}
+
+.monthly {
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .feature-img {
-  max-height: 200px;
-  max-width: 300px;
-  margin-bottom: 10px;
+  height: 200px;
+  width: 300px;
+  margin: 0px;
 }
