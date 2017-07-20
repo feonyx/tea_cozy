@@ -4,6 +4,7 @@ body {
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
+  margin: 0px;
 }
 
 /*TEMP /
@@ -112,6 +113,7 @@ section {
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+  flex-shrink: 1;
 }
 
 .tea-month {
@@ -127,35 +129,19 @@ section {
 
 .features {
   display: flex;
-  flex-direction: column;
-
-  width: 1000px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  margin: 5px 0px;
-}
-
-.row1 {
-  justify-content: space-between;
-}
-
-.row2 {
+  flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
+  width: 1050px;
 }
 
-.row2 .monthly {
-  margin: auto 25px;
-}
-
-.monthly {
+.featured-item {
   width: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 5px 25px;
 }
 
 .feature-img {
