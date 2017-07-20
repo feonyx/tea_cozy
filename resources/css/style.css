@@ -5,6 +5,7 @@ body {
   color: seashell;
   opacity: 0.9;
   margin: 0px;
+  text-align: center;
 }
 
 /*TEMP /
@@ -39,6 +40,7 @@ header nav a {
   width: 200px;
   padding-left: 10px;
   flex-grow: 1;
+  text-align: left;
 }
 
 .logo-img {
@@ -56,12 +58,9 @@ header nav a {
 }
 
 /*Headers*/
-h2 {
-  margin: 10px auto;
-}
-
-h4 {
-  margin: 10px auto;
+h2, h3, h4 {
+  padding: 10px;
+  margin: 0px;
 }
 
 /*Theme*/
@@ -148,4 +147,57 @@ section {
   height: 200px;
   width: 300px;
   margin: 0px;
+}
+
+/* Locations */
+
+#locations {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 770px;
+}
+
+.location-background {
+  background-image: url("../images/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding-top: 70px;
+}
+
+.location-body {
+  width: 1200px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.locations {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.location {
+  width: 300px;
+  height: 275px;
+  margin: auto 20px;
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+#contact {
+  height: 200px;
+}
+
+/*Footer*/
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
